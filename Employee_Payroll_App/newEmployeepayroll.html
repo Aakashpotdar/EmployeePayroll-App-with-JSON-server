@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Employee PayRoll form</title>
+            <link rel="stylesheet" href="newEmployeePayroll.css">
+            <script defer src="newEmployeePayroll.js"></script>
+            <script defer src="newEmployeePayrollValide.js"></script>         
+        </head>
+        
+       <body>
+           <header class="header-content header">
+               <div class="logo-content">
+                   <img src="Image.jfif" alt="image" style="width:56px">
+                   <div>
+                       <span class="emp-text"> Employee</span><br>
+                       <span class="emp-text emp-payroll">PAYROLL</span>
+                   </div>
+               </div>
+           </header>
+               <div class="form-content">
+                <form class="form" action="/HomePage.html" onreset="resetForm()" onsubmit="save();return false">
+                    <div class="form-head"> Employee PayRoll form</div>
+                    <div class="row-content">
+                        <label class="label text" for="name">Name</label>
+                        <input class="input" type="text" id="name" name="name" placeholder="Your name..." required>
+                        <error-output class="text-error" for="text"></error-output>
+                    </div>
+
+                    <div class="row-content">
+                        <label class="label text" for="profile">Profile image</label>
+                        <div class="profile-radio-content">
+                            <label>
+                                <input type="radio" id="profile1" name="profile"
+                                value="profile1.png" required>
+                                <img class="profile" id="image1" src="34.jpg">
+                            </label>
+                            <label>
+                                <input type="radio" id="profile3" name="profile"
+                                value="profile3.png" required>
+                                <img class="profile" id="image3" src="profilepic.jpg">
+                            </label>
+                            <label>
+                                <input type="radio" id="profile2" name="profile"
+                                value="profile2.jpg" required>
+                                <img class="profile" id="image2" src="12.jpg">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row-content">
+                        <label class="label text" for="gender">Gender</label>
+                        <div>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label class="text" for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label class="text" for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="row-content">
+                        <label class="label text" for="department">Department</label>
+                        <div>
+                            <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
+                            <label class="text" for="hr">HR</label>
+                            <input class="checkbox" type="checkbox" id="sales" name="sales" value="Sales">
+                            <label class="text" for="sales">Sales</label>
+                            <input class="checkbox" type="checkbox" id="finance" name="finance" value="Finance">
+                            <label class="text" for="finance">Finance</label>
+                            <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="Engineer">
+                            <label class="text" for="engineer">Engineer</label>
+                            <input class="checkbox" type="checkbox" id="others" name="others" value="Others">
+                            <label class="text" for="others">Others</label>
+                        </div>
+                        </div>
+
+                        <div class="row-content">
+                            <label class="label text" for="salary">Choose your salary</label>
+                            <input class="input" type="range" name="salary" id="salary" min="30000" max="50000" step="100" value="40000">
+                            <output class="salary-output text" for="salary">40000</output>
+                        </div>
+
+                        <div class="row-content">
+                            <label class="label text" for="startDate">Start Date</label>
+                            <div>
+                                <select id="day" name="Day">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option> 
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select id="month" name="Month">
+                                    <option value="Jan">January</option>
+                                    <option value="Feb">Febuary</option>
+                                    <option value="Mar">March</option>
+                                    <option value="Apr">April</option>
+                                    <option value="May">May</option>
+                                    <option value="Jun">June</option>
+                                    <option value="Jul">July</option>
+                                    <option value="Aug">August</option>
+                                    <option value="Sep">September</option>
+                                    <option value="Oct">Octomber</option>
+                                    <option value="Nov">Novenmber</option>
+                                    <option value="Dec">December</option>
+                                </select>
+                                <select id="year" name="year">
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2019</option>
+                                    <option value="2020">2018</option>
+                                    <option value="2021">2017</option>
+                                    <option value="2020">2016</option>
+                                </select>
+                            </div>
+                            </div>
+
+                            <div class="row-content">
+                                <label class="label text" for="notes">Notes</label>
+                                <textarea id="notes" class="input" name="Notes" placeholder="" style="height: 100px"></textarea>
+
+                            </div>
+                            <div class="buttonParent">
+                                <a href="newEmployeepayroll.html" class="button cancelButton">Cancel</a>
+                                <div class="submit-reset">
+                                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                                    <button type="reset" class="resetButton button">Reset</button>
+                                </div>
+                            </div>
+                    </form>
+               </div>
+               <script>
+                const getElem=document.querySelector("#get_services");
+                const getURL="http://localhost:4000/employeePayrollDB";
+                    makeServiceCall("GET",getURL,true)
+                    .then(responseText=>{
+                        getElem.textContent="get user Data: "+responseText;
+                    })
+                    .catch(error=>{getElem.textContent="GET error status: "+JSON.stringify(error)});
+                    
+                    const deleteElem=document.querySelector("#delete_services");
+                    const deleteURL="http://localhost:4000/employeePayrollDB";
+                    makeServiceCall("DELETE",deleteURL,true)
+                    .then(responseText=>{
+                        deleteElem.textContent="delete user Data: "+responseText;
+                    })
+                    .catch(error=>{deleteElem.textContent="delete error status: "+JSON.stringify(error)});
+                    
+                    const postElem=document.querySelector("#post_services");
+                    const postURL="http://localhost:4000/employeePayrollDB";
+                    const empData={ _name:'aakash potdar',
+                                    _gender:'male',
+                                    _department:['HR',' Accounts'],
+                                    _salary:'40000',
+                                    _startDate:'20th feb,2021',
+                                    _note:'',
+                                    _id:new Date().getTime(),
+                                    _prfilePic:'12.jpg'
+                                };
+                    makeServiceCall("POST",postURL,true,empData)
+                    .then(responseText=>{
+                        postElem.textContent="post user Data: "+responseText;
+                    })
+                    .catch(error=>{postElem.textContent="post error status: "+JSON.stringify(error)});
+            </script>         
+       </body>
+    </html>

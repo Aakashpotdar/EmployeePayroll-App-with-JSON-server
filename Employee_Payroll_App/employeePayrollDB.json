@@ -1,0 +1,12 @@
+{
+    "employeePayrollDB": [
+        {
+            "name": "ram",
+            "salary": "45000",
+            "id": 3,
+            "gender":"male",
+            "department":"HR",
+            "prfilePic":"12.jpg"
+        }
+    ]
+}

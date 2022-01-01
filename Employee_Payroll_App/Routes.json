@@ -1,0 +1,7 @@
+{
+    "/employeePayrollDB/list":"/employeePayrollDB",
+    "/employeePayrollDB/get/:id":"/employeePayrollDB/:id",
+    "/employeePayrollDB/create":"/employeePayrollDB",
+    "/employeePayrollDB/update/:id":"/employeePayrollDB/:id",
+    "/employeePayrollDB/delete/:id":"/employeePayrollDB/:id"
+}
